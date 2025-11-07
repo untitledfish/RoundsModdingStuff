@@ -9,13 +9,10 @@ using CardChoiceSpawnUniqueCardPatch.CustomCategories;
 
 namespace Soapcock
 {
-    // These are the mods required for our mod to work
     [BepInDependency("com.willis.rounds.unbound", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("pykess.rounds.plugins.moddingutils", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("pykess.rounds.plugins.cardchoicespawnuniquecardpatch", BepInDependency.DependencyFlags.HardDependency)]
-    // Declares our mod to Bepin
     [BepInPlugin(ModId, ModName, Version)]
-    // The game our mod is associated with
     [BepInProcess("Rounds.exe")]
     public class MeaninglessExistance : BaseUnityPlugin
     {
@@ -28,7 +25,7 @@ namespace Soapcock
 
         void Awake()
         {
-            // Use this to call any harmony patch files your mod may have
+            //Declare Harmony Patches
             var harmony = new Harmony(ModId);
             harmony.PatchAll();
         }

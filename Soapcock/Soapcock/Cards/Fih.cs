@@ -10,7 +10,7 @@ using UnityEngine;
 
 namespace Soapcock.Cards
 {
-    class MyCardName : CustomCard
+    class Fih : CustomCard
     {
         private bool debugMode = false;
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
@@ -22,21 +22,23 @@ namespace Soapcock.Cards
         {
             //Edits values on player when card is selected
             if (debugMode) { UnityEngine.Debug.Log($"[{MeaninglessExistance.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}."); }
+            characterStats.movementSpeed *= 6.7f;
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Run when the card is removed from the player
             if (debugMode) { UnityEngine.Debug.Log($"[{MeaninglessExistance.ModInitials}][Card] {GetTitle()} has been removed from player {player.playerID}."); }
+            characterStats.movementSpeed = 1.0f;
         }
 
 
         protected override string GetTitle()
         {
-            return "Template";
+            return "Fih";
         }
         protected override string GetDescription()
         {
-            return "Template Card";
+            return "Sex with Fih";
         }
         protected override GameObject GetCardArt()
         {
@@ -53,9 +55,9 @@ namespace Soapcock.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Effect",
-                    amount = "No",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    stat = "Fih Shoes",
+                    amount = "More",
+                    simepleAmount = CardInfoStat.SimpleAmount.Some
                 }
             };
         }
