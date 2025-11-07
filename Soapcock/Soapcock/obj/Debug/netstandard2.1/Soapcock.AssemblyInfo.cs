@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Soapcock")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c48d984b9d19252ba35d58b9122f1c3d65b32191")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10305faa81bdc2321b0b02f3888b3267061c1947")]
 [assembly: System.Reflection.AssemblyProductAttribute("Soapcock")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Soapcock")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
