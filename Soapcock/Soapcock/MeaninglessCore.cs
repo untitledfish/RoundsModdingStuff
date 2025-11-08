@@ -32,7 +32,8 @@ namespace Soapcock
         void Start()
         {
             instance = this;
-            CustomCard.BuildCard<MyCardName>();
+            CustomCard.BuildCard<Fih>();
+            CustomCard.BuildCard<ShotsOrShots>();
         }
     }
 }
